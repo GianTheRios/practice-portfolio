@@ -8,7 +8,7 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Nav bar -->
@@ -18,9 +18,11 @@
           <div class="nav__bar">
             <ul class="nav__links">
               <li class="home__btn"><a href="" class="home__btn">Home</a></li>
-              <li class="about__btn"><a href="" class="about__btn">About</a></li>
+              <li class="about__btn">
+                <a href="" class="about__btn">About</a>
+              </li>
               <li class="projects__btn">
-                <a href="" class="projects__btn">Projects</a>
+                <a href="" class="projects__btn" id="">Projects</a>
               </li>
               <li class="contact__btn">
                 <a href="" class="contact__btn">Contact</a>
@@ -30,23 +32,30 @@
           <div class="switch__container">
             <p class="class">Light</p>
             <div class="switch" id="switch">
-                <div class="handle" id="handle"></div>
+              <div class="handle" id="handle"></div>
             </div>
             <p class="label">Dark</p>
+          </div>
         </div>
-        </div>
+      </nav>
     </section>
-    </nav>
     <!-- Hero Section -->
     <section>
       <div class="hero__section">
         <div class="hero__container">
           <div data-aos="fade-up" data-aos-duration="800">
             <div class="hero__title">
-              <p>Hey 👋 I'm Gian.<br> 
-              <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+              <p>Hey 👋 I'm <span>Gian.</span><br /></p>
+              <div
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="800"
+              >
                 <div class="hero__detail">
-                  <p>I'm a <span>Front-End Developer</span> with a focus on Marketing and Design.</p>
+                  <p>
+                    I'm a <span>Front-End Developer</span> with a focus on<br />
+                    Marketing and Design.
+                  </p>
                 </div>
               </div>
             </div>
@@ -56,13 +65,71 @@
     </section>
 
     <!-- Projects Section -->
-
-
-
-
-
-
-
+    <section>
+      <div class="project__section" id="#projects">
+        <div class="project__title">
+          <div data-aos="zoom-in-up">
+            <p>Projects</p>
+          </div>
+        </div>
+        <div class="project__container">
+          <div class="project__card">
+            <div class="project__img">
+              <img src="images/1.png" alt="" />
+            </div>
+            <div class="project__info">
+              <h2>Project 1</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                voluptatum, quibusdam, quia, quae voluptates voluptatibus
+                voluptatem quos dolorum quod voluptate doloremque. Quisquam
+                voluptates, quibusdam quia voluptate quos dolorum quod voluptate
+                doloremque.
+              </p>
+              <div class="project__btn">
+                <a href="">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="project__card__2">
+            <div class="project__img">
+              <img src="images/1.png" alt="" />
+            </div>
+            <div class="project__info">
+              <h2>Project 1</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                voluptatum, quibusdam, quia, quae voluptates voluptatibus
+                voluptatem quos dolorum quod voluptate doloremque. Quisquam
+                voluptates, quibusdam quia voluptate quos dolorum quod voluptate
+                doloremque.
+              </p>
+              <div class="project__btn">
+                <a href="">View Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="project__card__3">
+            <div class="project__img">
+              <img src="images/1.png" alt="" />
+            </div>
+            <div class="project__info">
+              <h2>Project 1</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                voluptatum, quibusdam, quia, quae voluptates voluptatibus
+                voluptatem quos dolorum quod voluptate doloremque. Quisquam
+                voluptates, quibusdam quia voluptate quos dolorum quod voluptate
+                doloremque.
+              </p>
+              <div class="project__btn">
+                <a href="">View Project</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Contact Section -->
 

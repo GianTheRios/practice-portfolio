@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --font: "Poppins", sans-serif;
 }
@@ -194,6 +198,13 @@ li,
   font-weight: 500;
 }
 
+.hero__title span {
+  color: rgba(65, 164, 240, 0.921);
+  font-weight: 600;
+  font-size: 4.5rem;
+  cursor: pointer;
+}
+
 .hero__detail {
   text-align: center;
   font-size: 2rem;
@@ -202,8 +213,102 @@ li,
 }
 
 .hero__detail span {
-  color: rgb(45, 85, 246);
+  color: rgba(65, 164, 240, 0.921);
   font-weight: 600;
   font-size: 2.2rem;
   cursor: pointer;
+}
+
+/*----------- Project Section ----------*/
+
+.project__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+}
+
+.project__title {
+  text-align: center;
+  font-size: 6rem;
+  font-weight: 600;
+  margin-top: 5rem;
+  padding: 1rem 1rem;
+  border-radius: 4rem;
+  color: rgba(65, 164, 240, 0.921);
+  border: 1px solid rgba(65, 164, 240, 0.921);
+  box-shadow: 10px 10px 0px 0 rgba(65, 164, 240, 0.921);
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+}
+
+.project__title:hover {
+  transform: rotateY(360deg);
+  color: white;
+  background-color: rgba(65, 164, 240, 0.921);
+  border: 1px solid rgba(65, 164, 240, 0.921);
+  box-shadow: 10px 10px 0px 0 white;
+}
+
+.project__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  gap: 2rem;
+}
+
+.project__card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 25rem;
+  height: 30rem;
+  background-color: white;
+  border: 3px solid rgba(254, 100, 100, 0.921);
+  border-radius: 3rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.project__card:hover {
+  transform: scale(1.1);
+  border: 3px solid rgba(65, 164, 240, 0.921);
+  box-shadow: 10px 10px 0px 0 rgba(65, 164, 240, 0.921);
+}
+
+.project__card__2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 25rem;
+  height: 30rem;
+  background-color: white;
+  border: 3px solid rgba(255, 165, 68, 0.921);
+  border-radius: 3rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.project__card__2:hover {
+  transform: scale(1.1);
+  border: 3px solid rgba(65, 164, 240, 0.921);
+  box-shadow: 10px 10px 0px 0 rgba(65, 164, 240, 0.921);
+}
+
+.project__card__3 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 25rem;
+  height: 30rem;
+  background-color: white;
+  border: 3px solid rgb(47, 221, 160);
+  border-radius: 3rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.project__card__3:hover {
+  transform: scale(1.1);
+  border: 3px solid rgba(65, 164, 240, 0.921);
+  box-shadow: 10px 10px 0px 0 rgba(65, 164, 240, 0.921);
 }
