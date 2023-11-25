@@ -147,13 +147,15 @@ li,
 
 .switch__container {
   display: flex;
-  float: right;
+  justify-content: center;
   gap: 1em;
   align-items: center;
   margin-left: 1rem;
+  position: absolute;
+  left: 84%;
 
   .switch {
-    width: 75px;
+    width: 65px;
     background: #2f2f2f;
     border-radius: 5em;
     display: flex;
@@ -163,8 +165,8 @@ li,
 
     .handle {
       border-radius: 50%;
-      width: 30px;
-      height: 30px;
+      width: 25px;
+      height: 25px;
       background: white;
       transition: transform 0.3s;
     }
@@ -172,7 +174,15 @@ li,
 }
 
 .move-right {
-  transform: translateX(45px);
+  transform: translateX(35px);
+}
+
+.light {
+  font-size: 0.8rem;
+}
+
+.dark {
+  font-size: 0.8rem;
 }
 
 /*----------- Hero Section ----------*/
@@ -189,7 +199,7 @@ li,
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 18rem;
+  margin-bottom: 15rem;
 }
 
 .hero__title {
@@ -213,10 +223,81 @@ li,
 }
 
 .hero__detail span {
-  color: rgba(65, 164, 240, 0.921);
+  background: linear-gradient(
+    to right,
+    rgba(26, 129, 255, 0.921),
+    rgba(100, 192, 254, 0.921),
+    rgb(47, 117, 221)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
   font-weight: 600;
   font-size: 2.2rem;
   cursor: pointer;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.fa-brands {
+  font-size: 2.3rem;
+  color: black;
+  transition: 0.3s all ease-in-out;
+}
+
+.fa-brands:hover {
+  transform: scale(1.2);
+  color: rgba(65, 164, 240, 0.921);
+}
+
+.resume__button {
+  background-color: white;
+  color: black;
+  border-radius: 15rem;
+  width: 6rem;
+  height: 3.5rem;
+  border-end-end-radius: 0;
+  box-shadow: 10px 10px 10px 3px rgba(0, 0, 0, 0.1);
+  transform: scale(1.08);
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: uppercase;
+  transition: 0.3s all ease-in-out;
+}
+
+.resume__button:hover {
+  width: 12rem;
+  height: 4rem;
+  border: none;
+  background-color: rgba(65, 164, 240, 0.921);
+  border-radius: 4rem;
+  box-shadow: 10px 10px 10px 3px rgba(0, 0, 0, 0.1);
+  border-end-end-radius: 4rem;
+  margin-top: 2rem;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.resume__button:active {
+  transform: translateY(2px);
+  border: 2px solid black;
+  background-color: whitesmoke;
+  color: black;
+}
+
+/* About Me Section */
+
+.about__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
 }
 
 /*----------- Project Section ----------*/

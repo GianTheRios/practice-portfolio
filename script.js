@@ -10,7 +10,7 @@ function toggleMode() {
   if (switchStatus === 0) {
     document.documentElement.style.setProperty("--background-color", "white");
     document.documentElement.style.setProperty("--text-color", "black");
-    handle.style.transform = "translateX(30px)";
+    handle.style.transform = "translateX(25px)";
     switchStatus = 1;
   } else {
     // dark mode on

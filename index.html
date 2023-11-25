@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/68e337381d.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <!-- Nav bar -->
@@ -30,18 +31,18 @@
             </ul>
           </div>
           <div class="switch__container">
-            <p class="class">Light</p>
+            <p class="light">Light</p>
             <div class="switch" id="switch">
               <div class="handle" id="handle"></div>
             </div>
-            <p class="label">Dark</p>
+            <p class="dark">Dark</p>
           </div>
         </div>
       </nav>
     </section>
     <!-- Hero Section -->
     <section>
-      <div class="hero__section">
+      <div class="hero__section" id="#home">
         <div class="hero__container">
           <div data-aos="fade-up" data-aos-duration="800">
             <div class="hero__title">
@@ -54,21 +55,68 @@
                 <div class="hero__detail">
                   <p>
                     I'm a <span>Front-End Developer</span> with a focus on<br />
-                    Marketing and Design.
+                    creating meaningful digital experiences.
                   </p>
                 </div>
               </div>
+              <div
+                data-aos="fade-up"
+                data-aos-duration="1200"
+                data-aos-delay="1800"
+              >
+                <div class="socials">
+                  <a href=""><i class="fa-brands fa-linkedin" ></i></a> 
+                  <a href="https://github.com/giantherios"><i class="fa-brands fa-github fa-l" ></i></a>
+                  <a href="https://twitter.com/giantherios"><i class="fa-brands fa-square-x-twitter"></i></a> 
+                </div>
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-duration="1400"
+                data-aos-delay="2200"
+              > 
+                <button class="resume__button">Resume</button>
+              </div>  
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- About Me -->
+    <section>
+      <div class="about__section" id="#about">
+        <div class="about__container">
+          <div class="about__title">
+            <div data-aos="zoom-in-up" data-aos-duration="800">
+              <p>About Me</p>
+            </div>
+          </div>
+          <div class="about__info">
+            <div class="about__img">
+              <img src="images/1.png" alt="" />
+            </div>
+            <div class="about__detail">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+                voluptatum, quibusdam, quia, quae voluptates voluptatibus
+                voluptatem quos dolorum quod voluptate doloremque. Quisquam
+                voluptates, quibusdam quia voluptate quos dolorum quod voluptate
+                doloremque.
+              </p>
+              <div class="about__btn">
+                <a href="">View Resume</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     <!-- Projects Section -->
     <section>
       <div class="project__section" id="#projects">
         <div class="project__title">
-          <div data-aos="zoom-in-up">
+          <div data-aos="zoom-in-up" data-aos-duration="800">
             <p>Projects</p>
           </div>
         </div>
