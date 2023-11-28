@@ -1,3 +1,5 @@
+// Light and Dark Mode
+
 const switchBtn = document.getElementById("switch");
 const handle = document.getElementById("handle");
 
@@ -20,3 +22,17 @@ function toggleMode() {
     handle.style.transform = "translateX(0)";
   }
 }
+
+// colorChangeSection
+
+window.addEventListener("scroll", () => {
+  let element = document.getElementById("colorChangeSection");
+  let position = element.getBoundingClientRect();
+
+  // Check if the section is in the viewport
+  if (position.top <= window.innerHeight && position.bottom >= 0) {
+    element.style.backgroundColor = "#41a4f0eb"; // Change to light blue when in view
+  } else {
+    element.style.backgroundColor = "white"; // Change back to white when out of view
+  }
+});

@@ -27,7 +27,6 @@ body {
 /*----------- Nav bar ----------*/
 
 nav {
-  position: sticky;
   width: 100%;
   height: 8rem;
   background-color: white;
@@ -209,7 +208,7 @@ li,
 }
 
 .hero__title span {
-  color: rgba(65, 164, 240, 0.921);
+  color: #41a4f0eb;
   font-weight: 600;
   font-size: 4.5rem;
   cursor: pointer;
@@ -292,12 +291,111 @@ li,
 
 /* About Me Section */
 
+#colorChangeSection {
+  height: 100vh; /* Adjust as needed */
+  transition: background-color 1s ease-in-out; /* Smooth transition for background color */
+  background-color: white; /* Initial background color */
+}
+
 .about__section {
+  height: 100vh;
+  min-width: 100%;
+  background-color: rgba(65, 164, 240, 0.921);
+  padding: 3rem;
+}
+
+.about__grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr 2fr 2fr;
+  gap: 1rem;
+  height: 100vh;
+}
+
+/* about me  */
+
+.about__container__1 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  border-radius: 4rem;
+  height: 25rem;
+  width: 100%;
+  border: 3px solid black;
+  transition: all 0.3s ease-in-out;
+}
+
+.about__container__1:hover {
+  border: 3px solid black;
+  box-shadow: 10px 10px 0px 0 rgba(0, 0, 0, 0.921);
+  width: 100%;
+}
+
+.gian,
+img {
+  border-radius: 50%;
+  height: 20rem;
+  width: 20rem;
+  border: 1px solid black;
+}
+
+/* self taught */
+.about__container__2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 4rem;
+  height: 25rem;
+  width: 100%;
+  border: 3px solid black;
+  transition: all 0.3s ease-in-out;
+}
+
+.about__container__2:hover {
+  transform: scale(1.01);
+  border: 3px solid black;
+  box-shadow: 10px 10px 0px 0 rgba(0, 0, 0, 0.921);
+}
+
+/* skills */
+.about__container__3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 4rem;
+  height: 18rem;
+  width: 100%;
+  border: 3px solid black;
+  transition: all 0.3s ease-in-out;
+}
+
+.about__container__3:hover {
+  transform: scale(1.01);
+  border: 3px solid black;
+  box-shadow: 10px 10px 0px 0 rgba(0, 0, 0, 0.921);
+}
+
+/* exprerience */
+.about__container__4 {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  height: 100vh;
   background-color: white;
+  border-radius: 4rem;
+  height: 18rem;
+  width: 100%;
+  border: 3px solid black;
+  transition: all 0.3s ease-in-out;
+}
+
+.about__container__4:hover {
+  transform: scale(1.01);
+  border: 3px solid black;
+  box-shadow: 10px 10px 0px 0 rgba(0, 0, 0, 0.921);
 }
 
 /*----------- Project Section ----------*/
@@ -318,7 +416,7 @@ li,
   padding: 1rem 1rem;
   border-radius: 4rem;
   color: rgba(65, 164, 240, 0.921);
-  border: 1px solid rgba(65, 164, 240, 0.921);
+  border: 3px solid rgba(65, 164, 240, 0.921);
   box-shadow: 10px 10px 0px 0 rgba(65, 164, 240, 0.921);
   transform-style: preserve-3d;
   transition: all 1s ease-in-out;
@@ -334,6 +432,7 @@ li,
 
 .project__container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin-top: 5rem;
@@ -347,7 +446,7 @@ li,
   width: 20rem;
   height: 25rem;
   background-color: white;
-  border: 3px solid rgba(254, 100, 100, 0.921);
+  border: 3px solid black;
   border-radius: 3rem;
   transition: all 0.3s ease-in-out;
 }
@@ -365,7 +464,7 @@ li,
   width: 20rem;
   height: 25rem;
   background-color: white;
-  border: 3px solid rgba(255, 165, 68, 0.921);
+  border: 3px solid black;
   border-radius: 3rem;
   transition: all 0.3s ease-in-out;
 }
@@ -383,7 +482,7 @@ li,
   width: 20rem;
   height: 25rem;
   background-color: white;
-  border: 3px solid rgb(47, 221, 160);
+  border: 3px solid black;
   border-radius: 3rem;
   transition: all 0.3s ease-in-out;
 }

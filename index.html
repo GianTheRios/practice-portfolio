@@ -9,7 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="styles.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="https://kit.fontawesome.com/68e337381d.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/68e337381d.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- Nav bar -->
@@ -18,15 +21,17 @@
         <div class="nav__container">
           <div class="nav__bar">
             <ul class="nav__links">
-              <li class="home__btn"><a href="" class="home__btn">Home</a></li>
+              <li class="home__btn">
+                <a href="#home" class="home__btn">Home</a>
+              </li>
               <li class="about__btn">
-                <a href="" class="about__btn">About</a>
+                <a href="#about" class="about__btn">About</a>
               </li>
               <li class="projects__btn">
-                <a href="" class="projects__btn" id="">Projects</a>
+                <a href="#projects" class="projects__btn">Projects</a>
               </li>
               <li class="contact__btn">
-                <a href="" class="contact__btn">Contact</a>
+                <a href="" id="#contact" class="contact__btn">Contact</a>
               </li>
             </ul>
           </div>
@@ -41,8 +46,8 @@
       </nav>
     </section>
     <!-- Hero Section -->
-    <section>
-      <div class="hero__section" id="#home">
+    <section id="heroChangeSection">
+      <div class="hero__section" id="home">
         <div class="hero__container">
           <div data-aos="fade-up" data-aos-duration="800">
             <div class="hero__title">
@@ -65,18 +70,22 @@
                 data-aos-delay="1800"
               >
                 <div class="socials">
-                  <a href=""><i class="fa-brands fa-linkedin" ></i></a> 
-                  <a href="https://github.com/giantherios"><i class="fa-brands fa-github fa-l" ></i></a>
-                  <a href="https://twitter.com/giantherios"><i class="fa-brands fa-square-x-twitter"></i></a> 
+                  <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                  <a href="https://github.com/giantherios"
+                    ><i class="fa-brands fa-github fa-l"></i
+                  ></a>
+                  <a href="https://twitter.com/giantherios"
+                    ><i class="fa-brands fa-square-x-twitter"></i
+                  ></a>
                 </div>
               </div>
               <div
                 data-aos="fade-up"
                 data-aos-duration="1400"
                 data-aos-delay="2200"
-              > 
+              >
                 <button class="resume__button">Resume</button>
-              </div>  
+              </div>
             </div>
           </div>
         </div>
@@ -84,37 +93,36 @@
     </section>
 
     <!-- About Me -->
-    <section>
-      <div class="about__section" id="#about">
-        <div class="about__container">
+    <section class="about__section" id="colorChangeSection">
+      <div class="about__grid">
+        <div class="about__container__1">
           <div class="about__title">
-            <div data-aos="zoom-in-up" data-aos-duration="800">
-              <p>About Me</p>
-            </div>
+            <h1>About Me</h1>
           </div>
-          <div class="about__info">
-            <div class="about__img">
-              <img src="images/1.png" alt="" />
-            </div>
-            <div class="about__detail">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
-                voluptatum, quibusdam, quia, quae voluptates voluptatibus
-                voluptatem quos dolorum quod voluptate doloremque. Quisquam
-                voluptates, quibusdam quia voluptate quos dolorum quod voluptate
-                doloremque.
-              </p>
-              <div class="about__btn">
-                <a href="">View Resume</a>
-              </div>
-            </div>
+          <div class="gian">
+            <img src="images/ruto.png" alt="" />
           </div>
         </div>
+        <div class="about__container__2">
+          <div class="about__title__2">
+            <h1>Self Taught</h1>
+          </div>
+        </div>
+        <div class="about__container__3">
+          <div class="about__title__3">
+            <h1>Skills</h1>
+          </div>
+        </div>
+        <div class="about__container__4">
+          <div class="about__title__4">
+            <h1>Experience</h1>
+          </div>
       </div>
+    </section>
 
     <!-- Projects Section -->
     <section>
-      <div class="project__section" id="#projects">
+      <div class="project__section" id="projects">
         <div class="project__title">
           <div data-aos="zoom-in-up" data-aos-duration="800">
             <p>Projects</p>
@@ -123,7 +131,7 @@
         <div class="project__container">
           <div class="project__card">
             <div class="project__img">
-              <img src="images/1.png" alt="" />
+              <!-- img -->
             </div>
             <div class="project__info">
               <h2>Project 1</h2>
@@ -141,7 +149,7 @@
           </div>
           <div class="project__card__2">
             <div class="project__img">
-              <img src="images/1.png" alt="" />
+              <!-- img -->
             </div>
             <div class="project__info">
               <h2>Project 1</h2>
@@ -159,7 +167,7 @@
           </div>
           <div class="project__card__3">
             <div class="project__img">
-              <img src="images/1.png" alt="" />
+              <!-- img -->
             </div>
             <div class="project__info">
               <h2>Project 1</h2>
@@ -180,6 +188,10 @@
     </section>
 
     <!-- Contact Section -->
+
+    <footer>
+      
+    </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
