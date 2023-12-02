@@ -25,14 +25,16 @@ function toggleMode() {
 
 // colorChangeSection
 
-window.addEventListener("scroll", () => {
-  let element = document.getElementById("colorChangeSection");
-  let position = element.getBoundingClientRect();
+// window.addEventListener("scroll", () => {
+//   const element = document.getElementById("heroChangeSection");
+//   const aboutSection = document.getElementById("aboutChangeSection");
+//   const verticalScrollPx = window.scrollY || window.pageYOffset;
 
-  // Check if the section is in the viewport
-  if (position.top <= window.innerHeight && position.bottom >= 0) {
-    element.style.backgroundColor = "#41a4f0eb"; // Change to light blue when in view
-  } else {
-    element.style.backgroundColor = "white"; // Change back to white when out of view
-  }
-});
+//   if (verticalScrollPx < 700) {
+//     aboutSection.style.backgroundColor = "#41a4f0eb";
+//   } else if (verticalScrollPx > 500 && verticalScrollPx < 700) {
+//     element.style.backgroundColor = "white";
+//   } else {
+//     element.style.backgroundColor = "#41a4f0eb";
+//   }
+// });

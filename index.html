@@ -93,14 +93,14 @@
     </section>
 
     <!-- About Me -->
-    <section class="about__section" id="colorChangeSection">
-      <div class="about__grid">
+    <section class="about__section">
+      <div class="about__flex">
         <div class="about__container__1">
           <div class="about__title">
             <h1>About Me</h1>
           </div>
           <div class="gian">
-            <img src="images/ruto.png" alt="" />
+            <img src="images/ruto.png" alt=""/>
           </div>
         </div>
         <div class="about__container__2">
@@ -108,16 +108,18 @@
             <h1>Self Taught</h1>
           </div>
         </div>
-        <div class="about__container__3">
-          <div class="about__title__3">
-            <h1>Skills</h1>
-          </div>
-        </div>
-        <div class="about__container__4">
-          <div class="about__title__4">
-            <h1>Experience</h1>
-          </div>
       </div>
+        <div class="about__flex__2">
+          <div class="about__container__3">
+            <div class="about__title__3">
+              <h1>Skills</h1>
+            </div>
+          </div>
+          <div class="about__container__4">
+            <div class="about__title__4">
+              <h1>Experience</h1>
+            </div>
+        </div>
     </section>
 
     <!-- Projects Section -->
@@ -189,8 +191,34 @@
 
     <!-- Contact Section -->
 
-    <footer>
-      
+    <footer class="contact__section" id="contact">
+      <div class="contact__container">
+          <div class="contact__title">
+            <h1>Say <span>Hi</span> or <span>Let's work together!</span></h1>
+          </div>
+          <div class="contact__form">
+            <form action="">
+              <div class="contact__form__name">
+                <input type="text" placeholder="Name" />
+              </div>
+              <div class="contact__form__email">
+                <input type="email" placeholder="Email" />
+              </div>
+              <div class="contact__form__message">
+                <textarea
+                  name=""
+                  id=""
+                  cols="50"
+                  rows="15"
+                  placeholder="Message"
+                ></textarea>
+              </div>
+              <div class="contact__form__btn">
+                <button type="submit">Hey!</button>
+              </div>
+            </form>
+          </div>
+      </div>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
